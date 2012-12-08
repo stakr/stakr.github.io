@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width" />
+<title>{{ page.title }}</title>
+<link rel="profile" href="http://gmpg.org/xfn/11" />
+<link rel="stylesheet" type="text/css" media="all" href="/css/default.css" />
+
+<body class="two-column right-sidebar">
+<div id="page" class="hfeed">
+
+<header id="branding" role="banner">
+
+  <hgroup>
+    <h1 id="site-title"><span><a href="/" title="stakr" rel="home">stakr</a></span></h1>
+    <h2 id="site-description">Ehemalige Agentur für Konzeption und Realisation von Webanwendungen</h2>
+  </hgroup>
+
+  <a href="/"><img src="/header.png" width="1000" height="288" alt="" /></a>
+
+  <nav id="access" role="navigation">
+    <h3 class="assistive-text">Main menu</h3>
+    <div class="skip-link"><a class="assistive-text" href="#content" title="Skip to primary content">Skip to primary content</a></div>
+    <div class="skip-link"><a class="assistive-text" href="#secondary" title="Skip to secondary content">Skip to secondary content</a></div>
+    <div class="menu">
+      <ul>
+        <li{% if page.nav == 'home' %} class="current_page_item"{% endif %}><a href="/" title="Home">Home</a></li>
+        <li{% if page.nav == 'projekte' %} class="current_page_item"{% endif %}><a href="/projekte/">Projekte</a></li>
+        <li{% if page.nav == 'impressum' %} class="current_page_item"{% endif %}><a href="/impressum/">Impressum</a></li>
+      </ul>
+    </div>
+  </nav>
+
+</header>
+
+<div id="main">
+
+  <div id="primary">
+    <div id="content" role="main">
+
+      {{ content }}
+
+    </div>
+  </div>
+
+  <div id="secondary" class="widget-area" role="complementary">
+    <aside class="widget widget_links"><h3 class="widget-title">Team</h3>
+      <ul class='xoxo blogroll'>
+        <li><a href="http://www.henning-staib.de/" class="fn url">Henning Staib</a></li>
+        <li><a href="http://www.jansiwy.de/" class="fn url">Jan Sebastian Siwy</a></li>
+        <li><a href="http://spickermann.net/" class="fn url">Martin Spickermann</a></li>
+      </ul>
+    </aside>
+    <aside class="widget widget_links">
+      <h3 class="widget-title">GitHub</h3>
+      <ul class='xoxo blogroll'>
+        <li><a href="https://github.com/stakr" rel="me">https://github.com/stakr</a></li>
+      </ul>
+    </aside>
+  </div>
+
+</div>
+
+<footer id="colophon" role="contentinfo">
+  <div id="site-generator">
+  </div>
+</footer>
+
+</div>
