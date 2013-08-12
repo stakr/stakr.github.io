@@ -1,4 +1,4 @@
 stakr homepage
 ==============
 
-http://www.stakr.de/
+http://stakr.github.io/
